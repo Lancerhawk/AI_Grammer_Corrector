@@ -258,14 +258,14 @@
             <div class="input-section">
                 <h2 class="section-title">Input your text</h2>
                 <form action="/correct" method="POST">
-                <textarea name="text" placeholder="Enter your text here..."><%- originalText || '' %></textarea>
+                <textarea name="text" placeholder="Enter your text here..."><%= originalText || '' %></textarea>
                 <button class="enhance-btn">Enhance with AI</button>
                 </form>
             </div>
 
             <div class="output-section">
                 <h2 class="section-title">Corrected Result</h2>
-                <textarea readonly placeholder="Your corrected text will appear here..."><% if(corrected) { %><%- corrected %><% } else { %>Please enter some correct text<% } %></textarea>
+                <textarea readonly placeholder="Your corrected text will appear here..."><% if(corrected) { %><%= corrected %><% } else { %>Please enter some correct text<% } %></textarea>
             </div>
         </div>
     </div>
